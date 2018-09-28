@@ -5,15 +5,14 @@ import './App.scss';
 let welcomeText = "Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Science This intranet is for students who are completing the either the University of Waikato Pathway, or the Toi Ohomai Degree in Web or Software pathway. On this little mini-site you can find information specific to the Pandora labs that are used as part of your course.";
 
 class App extends Component {
-  state = {
-    toggle: true
-  }
 
-  toggle = () => {
+
+  toggle = (type) => {
     this.setState({
-      toggle: !this.state.toggle
+      toggle: type
     })
   }
+
 
   state ={
     press : true
@@ -58,17 +57,19 @@ class App extends Component {
                 {welcomeText}
               </p>
               <br />
-              <button  onClick={this.press}class="bg-black hover:bg-blue-dark text-white  py-2 px-4 rounded">Pandora</button>
-              <button  onClick={this.toggle} class="bg-black hover:bg-blue-dark text-white  py-2 px-4 rounded">Corporate Network</button>
+              <button  onClick={() => this.toggle('P')}class="bg-black hover:bg-blue-dark text-white  py-2 px-4 rounded">Pandora</button>
+              <button  onClick={() => this.toggle('C')} class="bg-black hover:bg-blue-dark text-white  py-2 px-4 rounded">Corporate Network</button>
             </div>
           </div>
         </header>
-        {this.state.toggle &&
-         <CorporateNetwork/>
-        }
-        {this.state.press &&
+        
+        {this.state.toggle == "P" &&
          <Pandora/>
         }
+        {this.state.toggle == "C" &&
+         <CorporateNetwork/>
+        }
+       
        <Footer/>   
       </div>
     );
@@ -98,7 +99,7 @@ class Footer extends Component {
 class CorporateNetwork extends Component {
   render() {
     return (
-      <section className="section03">
+      <section className="section03 container mx-auto">
           <h2>FAQ Related specifically to all students</h2>
           <p><strong>What's my email address?</strong><br />Your email address is in the format of <code>student-id@student.toiohomai.ac.nz</code></p>
           <p><strong>What's my username?</strong><br />Your username address is in the format of <code>student-id@student.toiohomai.ac.nz</code></p>
@@ -133,7 +134,7 @@ class CorporateNetwork extends Component {
 class Pandora extends Component{
   render(){
     return(
-      <section className="section section03">
+      <section className="section section03 container mx-auto">
           <h2 id="faq-related-specifically-to-span-stylecolor-bluecomputer-science-studentsspan-students-only">FAQ Related specifically to <span styles={"color: blue"}>Computer Science students</span> students only</h2>
         <p><strong>These questions are related to the pandora lab specifically</strong></p>
         <p><strong>What are the important dates for me to know?</strong></p>
