@@ -31,7 +31,8 @@ variables
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif:Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; }
+  --font-family-sans-serif:Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  --background-color: #efefef; }
 
 .fw-400 {
   font-weight: 400; }
@@ -51,7 +52,8 @@ body {
   grid-template-rows: 350px 1fr 200px;
   grid-template-areas: "header" "body" "footer";
   font-family: var(--font-family-sans-serif);
-  letter-spacing: 0.025em; }
+  letter-spacing: 0.025em;
+  background-color: var(--background-color); }
 
 /***************
 Header
@@ -59,6 +61,12 @@ Header
 header {
   background: url(./img/pandora-background.png) no-repeat bottom center, linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
   background-size: cover; }
+
+.section03 {
+  grid-area: body;
+  padding: 20px;
+  text-align: justify;
+  max-width: 50%; }
 
 .container-menu {
   display: grid;
@@ -84,3 +92,17 @@ header {
     margin-top: -1em;
     font-size: 14px;
     line-height: 1.5; }
+
+/***************
+Footer
+****************/
+footer {
+  background: url(./img/pandora-background.png) no-repeat bottom center, linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
+  background-size: cover; }
+
+table, tr, th, td {
+  border: 1px solid #222;
+  border-collapse: collapse; }
+
+th, td {
+  padding: 10px; }
