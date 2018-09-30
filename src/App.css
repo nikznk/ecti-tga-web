@@ -44,16 +44,25 @@ variables
   font-weight: 700; }
 
 /***************
-Body
+Html/Body
 ****************/
-body {
+html, body {
+  height: 100%;
+  width: 100%; }
+
+/***************
+Main wrapper
+****************/
+.main-wrapper {
   display: grid;
+  min-height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 350px 1fr 200px;
+  grid-template-rows: 350px 1fr 100px;
   grid-template-areas: "header" "body" "footer";
   font-family: var(--font-family-sans-serif);
   letter-spacing: 0.025em;
-  background-color: var(--background-color); }
+  background-color: var(--background-color);
+  grid-template-columns: 100%; }
 
 /***************
 Header
