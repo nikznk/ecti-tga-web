@@ -13,7 +13,7 @@ variables
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
-  --darkgreen:#009994;
+  --darkgreen: #009994;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -27,47 +27,48 @@ variables
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --darkgrey:#222222;
+  --darkgrey: #222222;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif:Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --background-color: #efefef;  
+  --font-family-sans-serif: Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --background-color: #efefef;
 }
 
 //typography
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 
 //font weight
-.fw{
-  &-400{
-      font-weight: 400;
+.fw {
+  &-400 {
+    font-weight: 400;
   }
 
-  &-500{
-      font-weight: 500;
+  &-500 {
+    font-weight: 500;
   }
 
-  &-700{
-      font-weight: 700;
+  &-700 {
+    font-weight: 700;
   }
 }
-
 
 /***************
 Html/Body
 ****************/
-html,body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 /***************
 Main wrapper
 ****************/
-.main-wrapper{
+.main-wrapper {
   display: grid;
   min-height: 100%;
   grid-template-columns: 1fr;
@@ -77,84 +78,86 @@ Main wrapper
   letter-spacing: 0.025em;
   background-color: var(--background-color);
   grid-template-columns: 100%;
-
 }
 
 /***************
 Header
 ****************/
-header{
-  background:url(./img/pandora-background.png) no-repeat bottom center, linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
+header {
+  background: url(./img/pandora-background.png) no-repeat bottom center,
+    linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
   background-size: cover;
 }
 
 .section03 {
-    grid-area: body;
-    padding: 20px;
-    text-align: justify;
-    max-width: 50%;
+  grid-area: body;
+  padding: 20px;
+  text-align: justify;
+  max-width: 50%;
 }
 
+.container {
+  &-menu {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px;
+    grid-template-areas: "logo" "main-menu";
+    align-items: center;
 
-.container{
-  &-menu{
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      grid-template-rows: 80px;
-      grid-template-areas: "logo" "main-menu";
-      align-items: center;
-
-      //nav
-      nav{
-          li{
-              a{
-                  color:var(--white);
-                  font-size: 16px;
-                  text-decoration: none;
-              }
-          }
+    //nav
+    nav {
+      li {
+        a {
+          color: var(--white);
+          font-size: 16px;
+          text-decoration: none;
+        }
       }
-
+    }
   }
 
-  &-welcome{
-      margin-top:20px;
-      *{
-          color:var(--white);
-      }
+  &-welcome {
+    margin-top: 20px;
+    * {
+      color: var(--white);
+    }
 
-      h1,h2{
-          margin-bottom:10px;
-      }
+    h1,
+    h2 {
+      margin-bottom: 10px;
+    }
 
-      h2{
-          margin-bottom:20px;
-      }
+    h2 {
+      margin-bottom: 20px;
+    }
 
-      p{
-          white-space: pre-line;
-          margin-top:-1em;
-          font-size: 14px;
-          line-height:1.5;
-      }
+    p {
+      white-space: pre-line;
+      margin-top: -1em;
+      font-size: 14px;
+      line-height: 1.5;
+    }
   }
 }
-
 
 /***************
 Footer
 ****************/
-footer{
-    background:url(./img/pandora-background.png) no-repeat bottom center, linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
-    background-size: cover;
-
-  }
-
-  table, tr, th, td {
-    border: 1px solid #222;
-    border-collapse: collapse;
+footer {
+  background: url(./img/pandora-background.png) no-repeat bottom center,
+    linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
+  background-size: cover;
 }
 
-th, td {
-    padding: 10px;
+table,
+tr,
+th,
+td {
+  border: 1px solid #222;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
 }
