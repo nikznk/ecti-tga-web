@@ -141,6 +141,25 @@ header {
 }
 
 /***************
+Section buttons / links
+****************/
+section a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: blue;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: darken(blue, 10%);
+  }
+}
+
+/***************
 Footer
 ****************/
 footer {

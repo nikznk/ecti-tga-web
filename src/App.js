@@ -40,12 +40,14 @@ class App extends Component {
             </div>
           </header>
 
-          <Route exact path="/" component={Home} />
-          <Route exact path="/CorporateNetwork" component={CorporateNetwork} />
-          <Route exact path="/Pandora" component={Pandora} />
-          <Route exact path="/Tools" component={Tools} />
-          <Route exact path="/NoticeBoard" component={NoticeBoard} />
-          <Route exact path="/Contact" component={Contact} />
+          <main className="main-content">
+            <Route exact path="/" component={Home} />
+            <Route path="/CorporateNetwork" component={CorporateNetwork} />
+            <Route path="/Pandora" component={Pandora} />
+            <Route path="/Tools" component={Tools} />
+            <Route path="/NoticeBoard" component={NoticeBoard} />
+            <Route path="/Contact" component={Contact} />
+          </main>
 
           <Footer />
         </React.Fragment>
