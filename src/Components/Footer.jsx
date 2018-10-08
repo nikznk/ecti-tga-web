@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import logo from "../img/logo.png";
+import facebook from "../img/facebook.png";
+import instagram from "../img/instagram.png";
 
 class Footer extends Component {
   state = {};
@@ -9,8 +11,24 @@ class Footer extends Component {
         <footer>
           <section>
             <div className="container mx-auto footer">
-              <img src={logo} alt="Toi ohomai" />
-              <div className="col col02">200 Cameron Road, Tauranga</div>
+              <img className="py-2" src={logo} alt="Toi ohomai" />
+              <div className="col col02">
+                200 Cameron Road, Tauranga
+                <a href="https://www.facebook.com/toiohomai/">
+                  <img
+                    className="float-right"
+                    src={facebook}
+                    alt="facebookicon"
+                  />
+                </a>
+                <a href="https://www.instagram.com/toiohomai/">
+                  <img
+                    className="float-right"
+                    src={instagram}
+                    alt="facebookicon"
+                  />
+                </a>
+              </div>
             </div>
           </section>
         </footer>
