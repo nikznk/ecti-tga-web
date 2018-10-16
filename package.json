@@ -25,5 +25,11 @@
   "devDependencies": {
     "postcss-cli": "^6.0.0",
     "tailwindcss": "^0.6.6"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
