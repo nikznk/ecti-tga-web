@@ -6,7 +6,7 @@ cache:
     - "node_modules"
 addons:
   ssh_known_hosts:
-    - beta.tga.ecti.ac.nz
+    - tga.ecti.ac.nz
 after_success:
   - npm run build
   - cd build
