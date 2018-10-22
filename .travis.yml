@@ -10,6 +10,8 @@ addons:
 after_success:
   - npm run build
   - cd build
+  - git init
+  - ls -la
   - git branch
   - git checkout master
   - eval "$(ssh-agent -s)" #start the ssh agent
