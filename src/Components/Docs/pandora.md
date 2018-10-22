@@ -4,14 +4,14 @@
 
 **What are the important dates for me to know?**
 
-| Semester | Start | Break | End |
-| :---: | :--- | :--- | :--- |
-| Semester 1 | 26th Feb 2018 | 16th of April - 27th of April 2018 | 29th of June 2018 |
-| Semester 2 | 23rd July 2018 | 1st Oct 2018 - 12th Oct 2018 | 23rd Novemer 2018 |
+|  Semester  | Start          | Break                              | End               |
+| :--------: | :------------- | :--------------------------------- | :---------------- |
+| Semester 1 | 26th Feb 2018  | 16th of April - 27th of April 2018 | 29th of June 2018 |
+| Semester 2 | 23rd July 2018 | 1st Oct 2018 - 12th Oct 2018       | 23rd Novemer 2018 |
 
 **What are the differences between pandora and corporate files?**
 
-The corporate network (the library and classrooms other than the 3rd floor) and the Pandora network (DT219, DT303, DT308 and DT312) are 2 completely separate networks.
+The corporate Network (the library and classrooms other than the 3rd floor) and the Pandora network (DT219, DT303, DT308 and DT312) are 2 completely separate networks.
 
 On the corporate network you have an H drive to store you files, but you cannot access that drive when you are not using a pc from the corporate institute. H drive's a volitile storage places, this means you **MUST BACK UP YOUR FILES SOMEWHERE ELSE**. A good place to use as primary storage is the Google drive from your `@g.toiohomai.ac.nz` account.
 
@@ -19,7 +19,7 @@ On the corporate network you have an H drive to store you files, but you cannot 
 
 The student Wi-Fi is managed through your corporate login and is therefore completely separate from the Pandora Network. If you are using your own device or connect your mobile device you are able to logon to the Wi-Fi to browse the web, but you won't have access to any resources on the Pandora Network.
 
-There are some exceptions, but you will hear about the relevant papers you will do in your degree. 
+There are some exceptions, but you will hear about the relevant papers you will do in your degree.
 
 To connect your device to the Student Wifi do this:
 
