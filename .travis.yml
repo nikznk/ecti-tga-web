@@ -7,9 +7,10 @@ cache:
 addons:
   ssh_known_hosts:
     - tga.ecti.ac.nz
-after_success:
+before_script:
   - npm run build
   - cd build
+after_success:
   - git init
   - ls -la
   - git branch
