@@ -2,6 +2,7 @@
 
 git init
 ls -la
+git add -A && git commit -m "Initial Commit"
 git branch
 git checkout master
 eval "$(ssh-agent -s)" #start the ssh agent
