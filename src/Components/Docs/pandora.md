@@ -7,13 +7,13 @@
 |  Semester  | Start          | Break                              | End               |
 | :--------: | :------------- | :--------------------------------- | :---------------- |
 | Semester 1 | 26th Feb 2018  | 16th of April - 27th of April 2018 | 29th of June 2018 |
-| Semester 2 | 23rd July 2018 | 1st Oct 2018 - 12th Oct 2018       | 23rd Novemer 2018 |
+| Semester 2 | 26rd July 2018 | 1st Oct 2018 - 12th Oct 2018       | 23rd Novemer 2018 |
 
 **What are the differences between pandora and corporate files?**
 
 The corporate Network (the library and classrooms other than the 3rd floor) and the Pandora network (DT219, DT303, DT308 and DT312) are 2 completely separate networks.
 
-On the corporate network you have an H drive to store you files, but you cannot access that drive when you are not using a pc from the corporate institute. H drive's a volitile storage places, this means you **MUST BACK UP YOUR FILES SOMEWHERE ELSE**. A good place to use as primary storage is the Google drive from your `@g.toiohomai.ac.nz` account.
+On the corporate network you have an H drive to store you files, but you cannot access that drive when you are not using a pc from the corporate institute. H drive's a volitile storage places, this means you **MUST BACK UP YOUR FILES SOMEWHERE ELSE**. A good place to use as primary storage is the Google drive from your `@g.toiohomai.ac.nz` account.<br/>
 
 **How do I connect to the Toi Ohomai Wi-Fi Network in Pandora?**
 
