@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactMarkdown from "react-markdown";
 import Notice from "./Docs/Notices/02-summer-of-tech.md";
-import Not from "./Docs/Notices/01-welcome-back.cd";
+import Not from "./Docs/Notices/01-welcome-back.md";
 
 class NoticeBoard extends Component {
   constructor(props) {
