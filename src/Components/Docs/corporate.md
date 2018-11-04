@@ -13,10 +13,10 @@ Note: It is a capital O not a zero in ToiOhomai
 _Note that if you are locked out of your account you will need to go to the Atea on the 1st floor to get it unlocked_
 
 **I can’t find my courses on Moodle. Where are they?**
-Moodle can be accessed directly via [https://moodle.toiohomai.ac.nz](https://moodle.toiohomai.ac.nz)
+Moodle can be accessed directly via [https://moodle.toiohomai.ac.nz](https://moodle.toiohomai.ac.nz){target="\_blank"}
 
 **Where to I see all the student services?**
-For this we use getconnected. [https://getconnected.toiohomai.ac.nz](https://getconnected.toiohomai.ac.nz), Here you can find your print balance, your timetable and have access to other services.
+For this we use getconnected. [https://getconnected.toiohomai.ac.nz](https://getconnected.toiohomai.ac.nz){target="\_blank"}, Here you can find your print balance, your timetable and have access to other services.
 
 **Can I store my files locally on a Toi Ohomai Institute of Technology PC?**
 On corporate machines (ie. library and drop-in lab on the first floor) you are able to store files on an H: drive. These drives cannot be access in a Pandora lab (DT219, DT303, DT308 and DT312).

@@ -8,15 +8,15 @@ Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Scienc
 - Setting up your [Google (GAFE)](/tools) and [Microsoft Imagine Account](/tools)
 - Find notices on [notice board](/NoticeBoard)
 - Contact us via our [contact form](/contact)
-- Toi Ohomai on [Social Media](https://toiohomai.ac.nz/life/social-media)
+- Toi Ohomai on [Social Media](https://toiohomai.ac.nz/life/social-media){target="\_blank"}
 
 ## General student offers
 
 - As a student of Toi Ohomai Institute of Technology, you also gain the benefits the students gain from other courses.
-- Most of them are listed on the [getconnected](https://getconnected.toiohomai.ac.nz/myplace) website, but here are the most common links.
-- To access Moodle go here = > [https://moodle.toiohomai.ac.nz](https://moodle.toiohomai.ac.nz)
-- To download Office 2016 as part of Office 365 go here => [https://portal.office.com/Home](https://portal.office.com/Home)
-- To access your student webmail account go here => [Outlook Webmail](https://outlook.office365.com/owa/?realm=student.toiohomai.ac.nz)
+- Most of them are listed on the [getconnected](https://getconnected.toiohomai.ac.nz/myplace){target="\_blank"} website, but here are the most common links.
+- To access Moodle go here = > [https://moodle.toiohomai.ac.nz](https://moodle.toiohomai.ac.nz){target="\_blank"}
+- To download Office 2016 as part of Office 365 go here => [https://portal.office.com/Home](https://portal.office.com/Home){target="\_blank"}
+- To access your student webmail account go here => [Outlook Webmail](https://outlook.office365.com/owa/?realm=student.toiohomai.ac.nz){target="\_blank"}
 
 ## Using the Student Wi-Fi
 
@@ -33,9 +33,9 @@ Your timetables will also be available on Moodle and getConnected
 
 ## Regulations and Student Conduct
 
-- [Student Code of Conduct](https://toiohomai.ac.nz/sites/default/files/inline-files/Student%20Code%20of%20Conduct%20from%202018%20Regs.pdf)
-- [2018 Student terms and condition of enrolment](https://toiohomai.ac.nz/sites/default/files/inline-files/Toi%20Ohomai_Enrolment%20Terms%20and%20Conditions_2018.pdf)
-- [2018 Regulatory Framework for Quality Assurance](https://toiohomai.ac.nz/sites/default/files/inline-files/2018%20Regulatory%20Framework%20%28approved%20AB121017%29.pdf)
+- [Student Code of Conduct](https://toiohomai.ac.nz/sites/default/files/inline-files/Student%20Code%20of%20Conduct%20from%202018%20Regs.pdf){target="\_blank"}
+- [2018 Student terms and condition of enrolment](https://toiohomai.ac.nz/sites/default/files/inline-files/Toi%20Ohomai_Enrolment%20Terms%20and%20Conditions_2018.pdf){target="\_blank"}
+- [2018 Regulatory Framework for Quality Assurance](https://toiohomai.ac.nz/sites/default/files/inline-files/2018%20Regulatory%20Framework%20%28approved%20AB121017%29.pdf){target="\_blank"}
 
 ## Any Questions?
 
