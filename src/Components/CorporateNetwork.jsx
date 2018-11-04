@@ -1,26 +1,34 @@
 import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
 import corporate from "./Docs/corporate.md";
+
+// Enable everything
+var md = require("markdown-it")({
+  html: true,
+  linkify: true,
+  typographer: true
+});
+var markdownItAttrs = require("markdown-it-attrs");
+md.use(markdownItAttrs);
 
 class CorporateNetwork extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { corp: null };
+    this.state = { corporate: "" };
   }
 
   componentWillMount() {
     fetch(corporate)
       .then(response => response.text())
       .then(text => {
-        this.setState({ corp: text });
+        this.setState({ corporate: text });
       });
   }
-
   render() {
+    const { corporate } = this.state;
     return (
-      <section className="section03 container mx-auto">
-        <ReactMarkdown source={this.state.corp} />
+      <section className="section section03 container  mx-auto ">
+        <div dangerouslySetInnerHTML={{ __html: md.render(corporate) }} />
       </section>
     );
   }

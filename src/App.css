@@ -33,16 +33,20 @@ variables
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: Roboto, "Helvetica Neue", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --background-color: #efefef; }
+  --background-color: #efefef;
+}
 
 .fw-400 {
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 .fw-500 {
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 .fw-700 {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 /***************
 Html/Body
@@ -50,60 +54,88 @@ Html/Body
 html,
 body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 /***************
 Main wrapper
 ****************/
 .main-wrapper {
+  display: -ms-grid;
   display: grid;
   min-height: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 350px 1fr 100px;
-  grid-template-areas: "header" "body" "footer";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 350px 1fr 100px;
+      grid-template-rows: 350px 1fr 100px;
+      grid-template-areas: "header" "body" "footer";
   font-family: var(--font-family-sans-serif);
   letter-spacing: 0.025em;
   background-color: var(--background-color);
-  grid-template-columns: 100%; }
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
 
 /***************
 Header
 ****************/
 header {
+  background: url(./img/pandora-background.png) no-repeat bottom center, -webkit-gradient(linear, right top, left top, from(var(--darkgrey)), to(var(--darkgreen)));
   background: url(./img/pandora-background.png) no-repeat bottom center, linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
-  background-size: cover; }
+  background-size: cover;
+}
 
 .section03 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: body;
   padding: 20px;
   text-align: justify;
-  max-width: 50%; }
+  max-width: 50%;
+}
 
 .container-menu {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 80px;
-  grid-template-areas: "logo" "main-menu";
-  align-items: center; }
-  .container-menu nav li a {
-    color: var(--white);
-    font-size: 16px;
-    text-decoration: none; }
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  -ms-grid-rows: 80px;
+      grid-template-rows: 80px;
+      grid-template-areas: "logo" "main-menu";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-menu nav li a {
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+}
 
 .container-welcome {
-  margin-top: 20px; }
-  .container-welcome * {
-    color: var(--white); }
-  .container-welcome h1,
-  .container-welcome h2 {
-    margin-bottom: 10px; }
-  .container-welcome h2 {
-    margin-bottom: 20px; }
-  .container-welcome p {
-    white-space: pre-line;
-    margin-top: -1em;
-    font-size: 14px;
-    line-height: 1.5; }
+  margin-top: 20px;
+}
+
+.container-welcome * {
+  color: var(--white);
+}
+
+.container-welcome h1,
+.container-welcome h2 {
+  margin-bottom: 10px;
+}
+
+.container-welcome h2 {
+  margin-bottom: 20px;
+}
+
+.container-welcome p {
+  white-space: pre-line;
+  margin-top: -1em;
+  font-size: 14px;
+  line-height: 1.5;
+}
 
 /***************
 Section buttons / links
@@ -112,16 +144,21 @@ Section buttons / links
 Footer
 ****************/
 footer {
+  background: url(./img/pandora-background.png) no-repeat bottom center, -webkit-gradient(linear, right top, left top, from(var(--darkgrey)), to(var(--darkgreen)));
   background: url(./img/pandora-background.png) no-repeat bottom center, linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
-  background-size: cover; }
+  background-size: cover;
+}
 
 table,
 tr,
 th,
 td {
   border: 1px solid #222;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 th,
 td {
-  padding: 10px; }
+  padding: 10px;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,25 +1,33 @@
 import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
 import Pandor from "./Docs/pandora.md";
+
+var md = require("markdown-it")({
+  html: true,
+  linkify: true,
+  typographer: true
+});
+var markdownItAttrs = require("markdown-it-attrs");
+md.use(markdownItAttrs);
 
 class Pandora extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { pand: null };
+    this.state = { Pandor: "" };
   }
 
   componentWillMount() {
     fetch(Pandor)
       .then(response => response.text())
       .then(text => {
-        this.setState({ pand: text });
+        this.setState({ Pandor: text });
       });
   }
   render() {
+    const { Pandor } = this.state;
     return (
       <section className="section section03 container mx-auto ">
-        <ReactMarkdown source={this.state.pand} escapeHtml={false} />
+        <div dangerouslySetInnerHTML={{ __html: md.render(Pandor) }} />
       </section>
     );
   }

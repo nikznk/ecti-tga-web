@@ -1,41 +1,47 @@
 import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
 import service from "./Docs/google.md";
 import microsoft from "./Docs/microsoft.md";
+
+// Enable everything
+var md = require("markdown-it")({
+  html: true,
+  linkify: true,
+  typographer: true
+});
+var markdownItAttrs = require("markdown-it-attrs");
+md.use(markdownItAttrs);
 
 class Tools extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { serv: null };
-    this.state = { micro: null };
+    this.state = {
+      service: "",
+      microsoft: ""
+    };
   }
 
   componentWillMount() {
-    fetch(service)
-      .then(response => response.text())
-      .then(text => {
-        this.setState({ serv: text });
-      });
-    fetch(microsoft)
-      .then(response => response.text())
-      .then(text => {
-        this.setState({ micro: text });
-      });
+    var urls = ["service:" + service, "microsoft:" + microsoft];
+
+    for (var url in urls) {
+      let mdlabel = urls[url].split(":")[0];
+      let mdfile = urls[url].split(":")[1];
+
+      fetch(mdfile)
+        .then(response => response.text())
+        .then(text => {
+          this.setState({ [mdlabel]: text });
+        });
+    }
   }
   render() {
     return (
-      <section className="container  mx-auto">
-        <ReactMarkdown
-          source={this.state.serv}
-          escapeHtml={false}
-          linkTarget="_blank"
-        />
-
-        <ReactMarkdown
-          source={this.state.micro}
-          escapeHtml={false}
-          linkTarget="_blank"
+      <section className="section section03 container  mx-auto ">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: md.render(this.state.service + "" + this.state.microsoft)
+          }}
         />
       </section>
     );

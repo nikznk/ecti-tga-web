@@ -4,113 +4,165 @@ class Contact extends Component {
   state = {};
   render() {
     return (
-      <form className="w-full max-w-md mx-auto">
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label
-              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-              for="grid-first-name"
-            >
-              First Name
-            </label>
+      <form
+        class="form container mx-auto"
+        method="POST"
+        name="tga_contact"
+        action="/send"
+      >
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            autofocus
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="studentid">Your Student ID:</label>
+          <input
+            type="numbr"
+            pattern="[0-9]*"
+            name="studentid"
+            id="studentid"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Who to contact:</label>
+          <div class="form-check" styles={"font-size: 1.2em"}>
             <input
-              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              id="grid-first-name"
-              type="text"
-              placeholder="Jane"
+              type="checkbox"
+              name="contact"
+              id="andrew"
+              class="form-check-input check-scale"
+              value="andrew.chapman"
             />
-            <p class="text-red text-xs italic">Please fill out this field.</p>
+            <label class="form-check-label" for="andrew">
+              Andrew (Program Manager)
+            </label>
           </div>
-          <div class="w-full md:w-1/2 px-3">
-            <label
-              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-              for="grid-last-name"
-            >
-              Last Name
-            </label>
+          <div class="form-check">
             <input
-              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
-              id="grid-last-name"
-              type="text"
-              placeholder="Doe"
+              type="checkbox"
+              name="contact"
+              id="jacob"
+              class="form-check-input check-scale"
+              value="jacob.vansilfhout"
             />
+            <label class="form-check-label" for="jacob">
+              Jacob
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="contact"
+              id="jeffrey"
+              class="form-check-input check-scale"
+              value="jeffrey.kranenburg"
+            />
+            <label class="form-check-label" for="jeffrey">
+              Jeffrey
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="contact"
+              id="john"
+              class="form-check-input check-scale"
+              value="john.achilles"
+            />
+            <label class="form-check-label" for="john">
+              John
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="contact"
+              id="murray"
+              class="form-check-input check-scale"
+              value="murray.foote"
+            />
+            <label class="form-check-label" for="murray">
+              Murray
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="contact"
+              id="ray"
+              class="form-check-input check-scale"
+              value="ray.scott"
+            />
+            <label class="form-check-label" for="ray">
+              Ray
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="contact"
+              id="stefan"
+              class="form-check-input check-scale"
+              value="stefan.stasiewicz"
+            />
+            <label class="form-check-label" for="stefan">
+              Stefan
+            </label>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label
-              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-              for="grid-password"
-            >
-              Password
-            </label>
-            <input
-              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey"
-              id="grid-password"
-              type="password"
-              placeholder="******************"
-            />
-            <p class="text-grey-dark text-xs italic">
-              Make it as long and as crazy as you'd like
-            </p>
-          </div>
+        <div class="form-group">
+          <label for="subjectid">Subject:</label>
+          <select class="form-control" id="subjectid" name="subjectid">
+            <option value="" disabled selected>
+              Select your option
+            </option>
+            <option value="sick">
+              Please excuse me from class, because I am sick
+            </option>
+            <option value="excuse">
+              Please excuse me from class, because off...
+            </option>
+            <option value="general">General Enquiry (non paper related)</option>
+            <option value="feedback">Feedback on the course</option>
+          </select>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-2">
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label
-              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-              for="grid-city"
-            >
-              City
-            </label>
-            <input
-              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
-              id="grid-city"
-              type="text"
-              placeholder="Albuquerque"
-            />
-          </div>
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label
-              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-              for="grid-state"
-            >
-              State
-            </label>
-            <div class="relative">
-              <select
-                class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-grey"
-                id="grid-state"
-              >
-                <option>New Mexico</option>
-                <option>Missouri</option>
-                <option>Texas</option>
-              </select>
-              <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label
-              class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-              for="grid-zip"
-            >
-              Zip
-            </label>
-            <input
-              class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
-              id="grid-zip"
-              type="text"
-              placeholder="90210"
-            />
-          </div>
+        <div class="form-group">
+          <label for="name">Your Message:</label>
+          <textarea
+            type="text"
+            name="msg"
+            id="msg"
+            class="form-control"
+            rows="10"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            class="form-control btn btn-info"
+            value="Send Message"
+            id="submit"
+            name="submit"
+          />
         </div>
       </form>
     );
