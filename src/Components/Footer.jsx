@@ -14,14 +14,22 @@ class Footer extends Component {
               <img className="py-2" src={logo} alt="Toi ohomai" />
               <div className="col col02">
                 200 Cameron Road, Tauranga
-                <a target="_blank" href="https://www.facebook.com/toiohomai/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/toiohomai/"
+                >
                   <img
                     className="float-right"
                     src={facebook}
                     alt="facebookicon"
                   />
                 </a>
-                <a target="_blank" href="https://www.instagram.com/toiohomai/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/toiohomai/"
+                >
                   <img
                     className="float-right"
                     src={instagram}
