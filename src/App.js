@@ -9,7 +9,6 @@ import Pandora from "./Components/Pandora";
 import Tools from "./Components/Tools";
 import NoticeBoard from "./Components/NoticeBoard";
 import Contact from "./Components/Contact";
-import Grid from "@material-ui/core/Grid";
 
 let welcomeText =
   "Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Science This intranet is for students who are completing the either the University of Waikato Pathway, or the Toi Ohomai Degree in Web or Software pathway. On this little mini-site you can find information specific to the Pandora labs that are used as part of your course.";
