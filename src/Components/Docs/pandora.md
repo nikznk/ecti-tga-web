@@ -37,7 +37,7 @@ In terms of software, everything we use in the labs is available for free either
 **Where is the information about my courses?**
 
 Course outlines will be provided on Moodle, along with assessment information.
-A general description of the papers is also available on the [Toi Ohomai website](https://toiohomai.ac.nz/study/computing-course-papers-and-topics).
+A general description of the papers is also available on the [Toi Ohomai website](https://toiohomai.ac.nz/study/computing-course-papers-and-topics){target="\_blank"}.
 
 **How can contact staff and other students?**
 
