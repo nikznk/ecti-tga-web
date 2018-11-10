@@ -3,10 +3,14 @@ import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
 
 class Header extends Component {
-  toggle = type => {
-    this.setState({
-      toggle: type
-    });
+  toggle = () => {
+    document.body.classList.toggle("change");
+  };
+
+  closeMenu = () => {
+    if (document.body.classList.contains("change")) {
+      document.body.classList.toggle("change");
+    }
   };
 
   render() {
@@ -20,21 +24,36 @@ class Header extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li className="mx-3">
-                <Link to="/CorporateNetwork">Corporate Network</Link>
+                <Link onClick={this.closeMenu} to="/CorporateNetwork">
+                  Corporate Network
+                </Link>
               </li>
               <li className="mx-3">
-                <Link to="/Pandora">Pandora Network</Link>
+                <Link onClick={this.closeMenu} to="/Pandora">
+                  Pandora Network
+                </Link>
               </li>
               <li className="mx-3">
-                <Link to="/Tools">3rd Party Services</Link>
+                <Link onClick={this.closeMenu} to="/Tools">
+                  3rd Party Services
+                </Link>
               </li>
               <li className="mx-3">
-                <Link to="/NoticeBoard">Noticeboard</Link>
+                <Link onClick={this.closeMenu} to="/NoticeBoard">
+                  Noticeboard
+                </Link>
               </li>
               <li className="mx-3">
-                <Link to="/Contact">Contact Us</Link>
+                <Link onClick={this.closeMenu} to="/Contact">
+                  Contact Us
+                </Link>
               </li>
             </nav>
+            <div className="toggle1" onClick={this.toggle}>
+              <div class="bar1" />
+              <div class="bar2" />
+              <div class="bar3" />
+            </div>
           </div>
         </div>
       </React.Fragment>

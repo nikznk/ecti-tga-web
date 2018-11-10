@@ -28,7 +28,7 @@ Password = Your **corporate** password (the 16 character one)
 
 ## Timetable
 
-You can see it here on a <a href="https://docs.google.com/spreadsheets/d/1BNIFwYjH3DzgI-nTBoLueWMPF6fIU8tVP08_5_yu6n8/edit?usp=sharing" target="_blank">Google Sheet</a>
+You can see it here on a [Timetable](/Timetable)
 Your timetables will also be available on Moodle and getConnected
 
 ## Regulations and Student Conduct

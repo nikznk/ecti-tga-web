@@ -27,7 +27,7 @@ class Home extends Component {
   render() {
     const { Homee } = this.state;
     return (
-      <section className="section section03 container  mx-auto ">
+      <section className="section container  mx-auto ">
         <div dangerouslySetInnerHTML={{ __html: md.render(Homee) }} />
       </section>
     );
