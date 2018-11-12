@@ -6,8 +6,8 @@
 
 |  Semester  | Start          | Break                              | End               |
 | :--------: | :------------- | :--------------------------------- | :---------------- |
-| Semester 1 | 26th Feb 2018  | 16th of April - 27th of April 2018 | 29th of June 2018 |
-| Semester 2 | 26rd July 2018 | 1st Oct 2018 - 12th Oct 2018       | 23rd Novemer 2018 |
+| Semester 1 | 26th Feb 2019  | 16th of April - 27th of April 2019 | 29th of June 2019 |
+| Semester 2 | 26rd July 2019 | 1st Oct 2018 - 12th Oct 2019       | 23rd Novemer 2019 |
 
 **What are the differences between pandora and corporate files?**
 
