@@ -37,7 +37,7 @@ class Tools extends Component {
   }
   render() {
     return (
-      <section className="section section03 container  mx-auto ">
+      <section className="section container  mx-auto">
         <div
           dangerouslySetInnerHTML={{
             __html: md.render(this.state.service + "" + this.state.microsoft)

@@ -26,7 +26,7 @@ class Pandora extends Component {
   render() {
     const { Pandor } = this.state;
     return (
-      <section className="section section03 container mx-auto ">
+      <section className="section container  mx-auto">
         <div dangerouslySetInnerHTML={{ __html: md.render(Pandor) }} />
       </section>
     );

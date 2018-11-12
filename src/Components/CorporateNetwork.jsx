@@ -27,7 +27,7 @@ class CorporateNetwork extends Component {
   render() {
     const { corporate } = this.state;
     return (
-      <section className="section section03 container  mx-auto ">
+      <section className="section container  mx-auto ">
         <div dangerouslySetInnerHTML={{ __html: md.render(corporate) }} />
       </section>
     );

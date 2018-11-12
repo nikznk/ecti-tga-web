@@ -63,6 +63,27 @@ html,
 body {
   height: 100%;
   width: 100%;
+  line-height: 1.5;
+}
+
+/***************
+Typo
+****************/
+.main-content {
+  padding-bottom: 25px;
+  border: none !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 15px;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
 }
 
 /***************
@@ -72,7 +93,7 @@ Main wrapper
   display: grid;
   min-height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 350px 1fr 100px;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "body" "footer";
   font-family: var(--font-family-sans-serif);
   letter-spacing: 0.025em;
@@ -87,13 +108,8 @@ header {
   background: url(./img/pandora-background.png) no-repeat bottom center,
     linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
   background-size: cover;
-}
-
-.section03 {
-  grid-area: body;
-  padding: 20px;
-  text-align: justify;
-  max-width: 50%;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -135,31 +151,44 @@ header {
 
     p {
       white-space: pre-line;
-      margin-top: -1em;
       font-size: 14px;
       line-height: 1.5;
     }
   }
 }
 
+p {
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+section {
+  padding: 15px 0;
+}
+
+.notices {
+  blockquote {
+    margin: 10px 0;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #888;
+    margin: 15px 0;
+  }
+}
+
+.welcome {
+  display: none;
+}
+
 /***************
 Section buttons / links
 ****************/
-// section a {
-//   display: inline-block;
-//   padding: 10px 25px;
-//   background: blue;
-//   text-align: center;
-//   color: #ffffff;
-//   text-decoration: none;
-//   transition: all 0.2s ease-in-out;
-
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     background: darken(blue, 10%);
-//   }
-// }
+.bg-green {
+  background-color: #125a57;
+}
 
 /***************
 Footer
@@ -168,6 +197,7 @@ footer {
   background: url(./img/pandora-background.png) no-repeat bottom center,
     linear-gradient(-90deg, var(--darkgrey), var(--darkgreen));
   background-size: cover;
+  color: var(--white);
 }
 
 table,
@@ -223,6 +253,14 @@ Media Query
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .container {
+    padding-left: 10px;
+    padding-right: 8px;
+  }
+  .container {
+    &-welcome {
+      padding: 0px 30px;
+    }
+
     &-menu {
       padding: 0 15px;
 
@@ -239,6 +277,7 @@ Media Query
         flex-direction: column;
         justify-content: flex-start;
         box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+        z-index: 99999;
 
         li {
           a {
@@ -263,6 +302,56 @@ Media Query
       nav {
         opacity: 1;
         right: 0px;
+      }
+    }
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .welcome {
+    display: block;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .container {
+    &-menu {
+      padding: 0 15px 0 0;
+    }
+    &-welcome {
+      padding: 0px 15px;
+    }
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  .container-welcome p,
+  button {
+    display: none;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
+  .container {
+    &-menu {
+      padding: 0 15px 0 0;
+    }
+    &-welcome {
+      padding: 0px 15px;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 0px;
       }
     }
   }

@@ -9,7 +9,6 @@ import Pandora from "./Components/Pandora";
 import Tools from "./Components/Tools";
 import NoticeBoard from "./Components/NoticeBoard";
 import Contact from "./Components/Contact";
-import ScrollableTabsButtonAuto from "./Components/Timetable";
 let welcomeText =
   "Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Science This intranet is for students who are completing the either the University of Waikato Pathway, or the Toi Ohomai Degree in Web or Software pathway. On this little mini-site you can find information specific to the Pandora labs that are used as part of your course.";
 
@@ -27,12 +26,12 @@ class App extends Component {
               </h2>
               <p>{welcomeText}</p>
               <br />
-              <button className="bg-black hover:bg-blue-dark text-white m-1 py-2 px-4 rounded">
+              <button className="bg-black hover:bg-blue-dark text-white py-2 px-4 rounded">
                 <Link className="no-underline" to="/Pandora">
                   Pandora
                 </Link>
               </button>
-              <button className="bg-black hover:bg-blue-dark text-white py-2 px-4 rounded">
+              <button className="bg-black hover:bg-blue-dark text-white mx-1 py-2 px-4 rounded">
                 <Link className="no-underline" to="/CorporateNetwork">
                   Corporate Network
                 </Link>
@@ -47,7 +46,6 @@ class App extends Component {
             <Route path="/Tools" component={Tools} />
             <Route path="/NoticeBoard" component={NoticeBoard} />
             <Route path="/Contact" component={Contact} />
-            <Route path="/Timetable" component={ScrollableTabsButtonAuto} />
           </main>
 
           <Footer />

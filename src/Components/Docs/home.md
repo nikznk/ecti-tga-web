@@ -1,6 +1,6 @@
-# Welcome!
+# Welcome!{.welcome}
 
-Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Science This intranet is for students who are completing the either the University of Waikato Pathway, or the Toi Ohomai Degree in Web or Software pathway. On this little mini-site you can find information specific to the Pandora labs that are used as part of your course.
+Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Science This intranet is for students who are completing the either the University of Waikato Pathway, or the Toi Ohomai Degree in Web or Software pathway. On this little mini-site you can find information specific to the Pandora labs that are used as part of your course.{.welcome}
 
 ## Information for Pandora Network
 
@@ -28,7 +28,7 @@ Password = Your **corporate** password (the 16 character one)
 
 ## Timetable
 
-You can see it here on a [Timetable](/Timetable)
+You can see it here on a <a href="https://docs.google.com/spreadsheets/d/1BNIFwYjH3DzgI-nTBoLueWMPF6fIU8tVP08_5_yu6n8/edit?usp=sharing" target="_blank">Google Sheet</a>
 Your timetables will also be available on Moodle and getConnected
 
 ## Regulations and Student Conduct

@@ -21,7 +21,9 @@ class Header extends Component {
             <img src={logo} alt="Toi ohomai" />
             <nav className="flex list-reset justify-end">
               <li className="mx-3">
-                <Link to="/">Home</Link>
+                <Link onClick={this.closeMenu} to="/">
+                  Home
+                </Link>
               </li>
               <li className="mx-3">
                 <Link onClick={this.closeMenu} to="/CorporateNetwork">
@@ -50,9 +52,9 @@ class Header extends Component {
               </li>
             </nav>
             <div className="toggle1" onClick={this.toggle}>
-              <div class="bar1" />
-              <div class="bar2" />
-              <div class="bar3" />
+              <div className="bar1" />
+              <div className="bar2" />
+              <div className="bar3" />
             </div>
           </div>
         </div>

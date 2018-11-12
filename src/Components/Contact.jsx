@@ -20,7 +20,7 @@ class Contact extends Component {
   render() {
     const { Andrew, Jacob, Jeffrey, John, Murray, Ray, Stefan } = this.state;
     return (
-      <div className="container mx-auto contact">
+      <div className="section container  mx-auto contact">
         <FormControl>
           <TextField id="standard-name" label="Name" margin="normal" />
           <TextField id="standard-name" label="StudentID" margin="normal" />
@@ -123,7 +123,7 @@ class Contact extends Component {
             rows={2}
             rowsMax={4}
           />
-          <button class="bg-blue hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-dark hover:border-blue rounded">
+          <button className="bg-green hover:bg-green text-white font-bold py-2 px-4 border-b-4   rounded">
             Submit
           </button>
         </FormControl>
