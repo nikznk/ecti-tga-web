@@ -15,7 +15,6 @@ Summer of Tech are presenting at the Bongard Centre to tell you how they help yo
 @Summer of Tech is a non-profit programme, which helps students from NZ tertiary institutions, find full-time PAID internships in the IT industry. Typically from November – February, students work on real tech projects with a host employer for approximately 400 hours where you develop practical and work-based skills.
 
 <hr>
-<hr>
 
 ## Welcome Back!
 
