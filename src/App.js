@@ -13,6 +13,9 @@ let welcomeText =
   "Toi Ohomai Institute of Technology Bachelor of Computing and Mathematical Science This intranet is for students who are completing the either the University of Waikato Pathway, or the Toi Ohomai Degree in Web or Software pathway. On this little mini-site you can find information specific to the Pandora labs that are used as part of your course.";
 
 class App extends Component {
+  componentWillMount() {
+    document.title = "Pandora";
+  }
   render() {
     return (
       <Router>
