@@ -1,3 +1,15 @@
+## Toi Ohomai moving from Bongard to Windermere
+
+Kia ora,
+
+If you’ve recently enrolled to study with us or you’re returning to Toi Ohomai next year, this email gives you some more information about the move. Further questions and answers can be found here: Q & A Bongard Move. For any other questions, please contact our Information Centre team on 0800 86 46 46.
+
+We’re excited to announce some great news! From the beginning of 2019, we’re moving our Bongard-based courses to our Windermere Campus. That means all our Tauranga-based students and staff will finally be together in one place.
+At this stage Summer School papers for 2018/19 will continue to be taught at Bongard, however we’ll contact students directly if there are any changes.
+We appreciate some of you may have to consider alternative travel and/or childcare arrangements, however we sincerely hope the many positives of this move to Windermere outweigh potential challenges.
+We look forward to seeing you at Windermere next year.
+
+<hr>
 ## Summer of Tech
 
 You can earn from $6,000 -$10,000 during your summer holiday by landing an IT Internship. **FACT!**
